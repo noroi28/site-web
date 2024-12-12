@@ -1,4 +1,4 @@
 # site web
 
-idée :
+idée : Site web narratif avec l'interaction de l'utilisateur
   -
