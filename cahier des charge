@@ -1,0 +1,34 @@
+site: 
+- il faut héberger le site web et être acccécible 
+- le contenu du site Web devra être pertinent, et portera sur le thème de votre choix 
+- l’accessibilité, le référencement, y compris le référencement local (avec l’adresse du
+  département informatique par défaut) et réseaux sociaux ainsi que l’optimisation devront
+  être travaillés 
+- le site Web devra présenter le plus grand nombre possible de bonnes pratiques
+  d’écoconception
+- perfectionnement avec l’ajouts de fonctionnalités et l’utilisation d’un système de gestion
+  de version comme GitHub
+
+
+html : 
+- mettre un favicon   
+- mettre une balise meta description 
+- faire un mennu pour naviguer entre les page web 
+- des liens vers d'autres sites Web devront être présents sur une des pages ou vue Web
+- possibilieter de laisser un commdentaire pour nous laisser un avis sur le site 
+- une vidéo de moins de deux minutes avec un sous-titrage adapté, devra être présente 
+- pour les longues pages Web, un ancrage permettant remonter en haut de la page 
+- programmation soignée en HTML et CSS avec usage pertinent de balises sémantiques,
+  convention de nommage, indentation et commentarisation du code source
+- validationW3C de toutes vos pages HTML (réglage HTML5)
+
+css : 
+- faire un mennu pour naviguer entre les page web 
+- possibilité de changer le style du site Web grâce à un lien en JavaScript par l'utilisation
+  d'une autre feuille de style (la plus différente possible) de la feuille de style par défaut
+- le site Web devra être adaptatif à la fois sur smartphones, tablettes et ordinateurs (
+  bonne architecture des répertoires 
+- programmation soignée en HTML et CSS avec usage pertinent de balises sémantiques,
+  convention de nommage, indentation et commentarisation du code source
+- validation W3C de toutes vos pages CSS (réglage CSS niveau 3 avec aucun
+  avertissement et gestion des extensions propriétaires comme avertissement)
