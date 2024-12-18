@@ -12,7 +12,7 @@ site:
 
 html : 
 - mettre un favicon   
-- mettre une balise meta description 
+- ~~mettre une balise meta description~~ 
 - faire un mennu pour naviguer entre les page web 
 - des liens vers d'autres sites Web devront être présents sur une des pages ou vue Web
 - possibilieter de laisser un commdentaire pour nous laisser un avis sur le site 
