@@ -1,1 +1,26 @@
+body{
+    margin: 0px;
+    display: flex;
+    }
+
+nav.navigateur{
+    flex-grow: 1;
+    width: 100%;
+    background-color: #fb00ff;
+    padding: 20px;
+    margin: 20px;
+}
+
+nav.navigateur ul li.btn{
+
+    display:inline-block;
+    list-style-type: none;
+}
+
+nav.navigateur ul li.btn a{
+    color: black;
+    text-decoration: none;
+}
+
+
 
