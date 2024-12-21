@@ -32,3 +32,7 @@ css :
   convention de nommage, indentation et commentarisation du code source
 - validation W3C de toutes vos pages CSS (réglage CSS niveau 3 avec aucun
   avertissement et gestion des extensions propriétaires comme avertissement)
+
+Js :
+
+- Faire un bouton de changement de mode sombre <--> clair
