@@ -82,34 +82,4 @@ footer {
   margin-top: 20px;
   font-size: 16px;
 }
-
-/* Version responsive pour les écrans de moins de 768px */
-@media screen and (max-width: 768px) {
-  .navigateur ul {
-    flex-direction: column; /* Les liens sont empilés en colonne */
-  }
-
-  .navigateur li {
-    margin: 10px 0; /* Espace entre les liens */
-  }
-
-  .titreBlog h1 {
-    font-size: 28px; /* Titre plus petit */
-  }
-
-  .titreBlog .logo {
-    width: 40px; /* Logo réduit */
-    height: 40px;
-    right: 10px; /* Moins d'espace à droite */
-    top: 5px;
-  }
-
-  .contenueBlog {
-    padding: 15px; /* Réduction de l'espace intérieur */
-    max-width: 90%; /* La boîte prend presque toute la largeur */
-  }
-
-  footer {
-    font-size: 14px; /* Texte du footer plus petit */
-  }
 }
