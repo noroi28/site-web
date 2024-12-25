@@ -1,48 +1,115 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-nav.navigateur {
-    width: 100%;
-    background-color: #C80BC8; 
-    padding: 10px 0; 
-  }
-  
-nav.navigateur ul {
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
-    text-align: flex-start; 
-  }
-  
-nav.navigateur ul li {
-    display: inline-block;
-    margin: 0 20px; 
-  }
-  
-nav.navigateur ul li a {
-    color: white; 
-    text-decoration: none; 
-    font-size: 18px; 
-    padding: 10px 20px; 
-    display: inline-block;
-    border-radius: 5px; 
-    transition: background-color 0.3s ease; 
-  }
-  
-nav.navigateur ul li a:hover {
-    background-color: #575757; 
-  }
-
-header.titreBlog {
-    background-color: #FF66C4;
-    width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('fond.png');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
 }
-  
 
-  
- 
-  
+.navigateur {
+  background-color: hotpink;
+  padding: 10px;
+  text-align: center;
+}
 
+.navigateur ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
 
+.navigateur li {
+  margin: 0 15px;
+}
+
+.navigateur a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.titreBlog {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: hotpink;
+  color: white;
+  position: relative;
+}
+
+.titreBlog h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.titreBlog .logo {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.contenueBlog {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenueBlog h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contenueBlog pre {
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  color: #f0f0f0;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: hotpink;
+  color: white;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Version responsive pour les écrans de moins de 768px */
+@media screen and (max-width: 768px) {
+  .navigateur ul {
+    flex-direction: column; /* Les liens sont empilés en colonne */
+  }
+
+  .navigateur li {
+    margin: 10px 0; /* Espace entre les liens */
+  }
+
+  .titreBlog h1 {
+    font-size: 28px; /* Titre plus petit */
+  }
+
+  .titreBlog .logo {
+    width: 40px; /* Logo réduit */
+    height: 40px;
+    right: 10px; /* Moins d'espace à droite */
+    top: 5px;
+  }
+
+  .contenueBlog {
+    padding: 15px; /* Réduction de l'espace intérieur */
+    max-width: 90%; /* La boîte prend presque toute la largeur */
+  }
+
+  footer {
+    font-size: 14px; /* Texte du footer plus petit */
+  }
+}
