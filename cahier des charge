@@ -17,7 +17,7 @@ html :
 - des liens vers d'autres sites Web devront être présents sur une des pages ou vue Web
 - possibilieter de laisser un commdentaire pour nous laisser un avis sur le site (ok)
 - une vidéo de moins de deux minutes avec un sous-titrage adapté, devra être présente 
-- pour les longues pages Web, un ancrage permettant remonter en haut de la page 
+- pour les longues pages Web, un ancrage permettant remonter en haut de la page (ok)
 - programmation soignée en HTML et CSS avec usage pertinent de balises sémantiques,
   convention de nommage, indentation et commentarisation du code source (en cour)
 - validationW3C de toutes vos pages HTML (réglage HTML5) (en cour) 
@@ -37,3 +37,4 @@ Js :
 
 - Faire un bouton de changement de mode sombre <--> clair
 - rendre utilisable le bouton envoyer du  formulaire 
+-pour les longues pages Web, un ancrage permettant remonter en haut de la page 
