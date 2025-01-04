@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <title>Commentaire</title>
+</head>
+<body>
+    <nav class="navigateur">
+        <ul>
+          <li class="btn"><a href="index.html"> Acceuil </a></li>
+          <li class="btn"><a href="profil.html"> Profil </a></li>
+          <li class="btn"><a href="#"> Commentaire </a></li>
+        </ul>
+      </nav>
+
+     <!-- bouton back to up permet de remonter en haut de la page -->
+  <button onclick="topFunction()" id="haut" title="retour en haut">haut</button>
+    
+      <header class="titreBlog">
+        <h1>Le Super Blog</h1>
+        <img src="logo.png" class="logo">
+      </header>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2>speudo</h2>
+          <pre>contenu du commentaire</pre>
+        </article>
+      </main>
+
+<h3>Donnez nous votre avis</h3>
+<form action="" method="post">
+    <ul>
+      <li>
+        <label for="Nom">votre Nom</label>
+        <input type="text" id="Nom" name="Nom" placeholder="votre nom" />
+      </li>
+      <li>
+        <label for="mail">votre mail</label>
+        <input type="email" id="mail" name="mail" placeholder="votre.mail@exemple.com" />
+      </li>
+      <li>
+        <label for="msg">votre avis</label>
+        <textarea id="msg" name="message" placeholder="votre nom"></textarea>
+      </li>
+    </ul>
+  </form>
+</body>
+</html>

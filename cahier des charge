@@ -1,5 +1,5 @@
 site: 
-- il faut héberger le site web et être acccécible 
+- il faut héberger le site web et être acccécible (ok)
 - le contenu du site Web devra être pertinent, et portera sur le thème de votre choix 
 - l’accessibilité, le référencement, y compris le référencement local (avec l’adresse du
   département informatique par défaut) et réseaux sociaux ainsi que l’optimisation devront
@@ -11,16 +11,16 @@ site:
 
 
 html : 
-- mettre un favicon   
-- ~~mettre une balise meta description~~ 
-- faire un mennu pour naviguer entre les page web 
+- mettre un favicon (ok)  
+- mettre une balise meta description (ok)
+- faire un mennu pour naviguer entre les page web (ok)
 - des liens vers d'autres sites Web devront être présents sur une des pages ou vue Web
-- possibilieter de laisser un commdentaire pour nous laisser un avis sur le site 
+- possibilieter de laisser un commdentaire pour nous laisser un avis sur le site (ok)
 - une vidéo de moins de deux minutes avec un sous-titrage adapté, devra être présente 
-- pour les longues pages Web, un ancrage permettant remonter en haut de la page 
+- pour les longues pages Web, un ancrage permettant remonter en haut de la page (ok)
 - programmation soignée en HTML et CSS avec usage pertinent de balises sémantiques,
-  convention de nommage, indentation et commentarisation du code source
-- validationW3C de toutes vos pages HTML (réglage HTML5)
+  convention de nommage, indentation et commentarisation du code source (en cour)
+- validationW3C de toutes vos pages HTML (réglage HTML5) (en cour) 
 
 css : 
 - faire un mennu pour naviguer entre les page web 
@@ -32,3 +32,9 @@ css :
   convention de nommage, indentation et commentarisation du code source
 - validation W3C de toutes vos pages CSS (réglage CSS niveau 3 avec aucun
   avertissement et gestion des extensions propriétaires comme avertissement)
+
+Js :
+
+- Faire un bouton de changement de mode sombre <--> clair
+- rendre utilisable le bouton envoyer du  formulaire 
+-pour les longues pages Web, un ancrage permettant remonter en haut de la page 
