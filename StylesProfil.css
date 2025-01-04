@@ -58,20 +58,34 @@ body {
   font-weight: bold;
 }
 
-/* Contenu du profil */
+/* Conteneur principal du profil */
 .contenueProfil {
   background-color: white;
   margin: 20px auto;
   padding: 20px;
   width: 90%;
-  max-width: 500px;
+  max-width: 800px; /* Plus large pour accueillir l'image et le texte */
   color: black;
+  display: flex; /* Active le mode flexbox */
+  align-items: center; /* Aligne verticalement l'image et le texte */
 }
 
+/* Photo de profil */
+.photo {
+  width: 100px; /* Taille de l'image */
+  height: 100px;
+  border-radius: 50%; /* Cercle */
+  border: 3px solid hotpink; /* Bordure */
+  margin-right: 20px; /* Espacement entre l'image et le texte */
+  object-fit: cover; /* Remplit bien le cercle */
+  flex-shrink: 0; /* Empêche la photo de rétrécir */
+}
+
+/* Texte du profil */
 .contenueProfil ul {
   padding: 0;
   list-style: none;
-  margin: 0 0 20px;
+  margin: 0;
 }
 
 .contenueProfil ul li {
@@ -79,16 +93,16 @@ body {
   font-weight: bold;
 }
 
-.contenueProfil p {
-  line-height: 1.6;
-}
-
+/* Footer fixé en bas */
 footer {
   text-align: center;
   padding: 10px;
   background-color: hotpink;
   color: white;
-  margin-top: 20px;
+  position: fixed; /* Fixé au bas de la page */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Prend toute la largeur */
   font-size: 16px;
 }
 /* 

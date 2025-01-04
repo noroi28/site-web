@@ -131,12 +131,13 @@ form textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
+  text-align: center; /* Centrer le texte, y compris le placeholder */
+  resize: none;
+  box-sizing: border-box; /* Assurer que les bordures n'affectent pas la largeur */
 }
 
-form textarea {
-  height: 100px;
-  resize: none;
-}
+
+
 
 /* Bouton retour en haut */
 #haut {
