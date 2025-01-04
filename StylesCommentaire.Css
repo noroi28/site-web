@@ -157,7 +157,7 @@ form textarea {
   background-color: deeppink;
 }
 
-/* Media Queries pour version mobile */
+/*
 @media (max-width: 768px) {
   .contenuecommentaire {
     padding: 10px;
@@ -182,5 +182,5 @@ form textarea {
     margin: 10px 0;
   }
 }
-
+*/
   
