@@ -131,12 +131,6 @@ form textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
-}
-
-form textarea {
-  height: 100px;
-  resize: none;
-}
 
 /* Bouton retour en haut */
 #haut {
@@ -164,8 +158,6 @@ footer {
   margin-top: 20px;
   font-size: 16px;
 }
-
-
 
 
 /*
