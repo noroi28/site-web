@@ -10,15 +10,127 @@
 <body>
     <nav class="navigateur">
         <ul>
+          <button onclick="darkFunction()" id="Mode" title="Passer skibidiblog en sombre">Mode sombre</button>
           <li class="btn"><a href="index.html"> Accueil </a></li>
           <li class="btn"><a href="profil.html"> Profil </a></li>
           <li class="btn"><a href="#"> Commentaire </a></li>
         </ul>
     </nav>
+    
 
     <!-- Bouton back to up permet de remonter en haut de la page -->
-    <button onclick="topFunction()" id="haut" title="Retour en haut">⬆️</button>
+    <button id="Haut">⬆️</button>
     
+
+      <header class="titreBlog">
+        <h1>SKIBIDIBLOG</h1>
+        <img src="logo.png" class="logo">
+      </header>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2> <a href="https://www.youtube.com/watch?v=1WqC7EX5baM"> inspiration </a></h2>
+          <p>une impression de déjà vue</p>
+        </article>
+      </main>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2>CarVador</h2>
+          <p>Hey, ça a l’air de bien se passer pour toi ! Ton voisin Thomas a l’air super cool, ça doit être rassurant de commencer à se faire des potes dans une nouvelle ville. Continue comme ça, t’es sur la bonne voie !
+          </p>
+        </article>
+      </main>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2>JackpotLotus</h2>
+          <p>Julie et toi, ça a l’air de bien commencer ! Hâte d’en savoir plus </p>
+        </article>
+      </main>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2>FleurGamer</h2>
+          <p>Ce voisin chelou, là… Peut-être qu’il est juste timide ou qu’il avait un mauvais jour ? Essaie de pas trop t’en faire, ça arrive à tout le monde d’avoir une première impression bizarre.</p>
+        </article>
+      </main>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2>EvilPoule</h2>
+          <p>Ce mec qui te suit partout et te fixe, c’est grave flippant, sérieux. Mais est-ce que t’es sûr que c’est pas juste toi qui remarques plus sa présence parce qu’il t’obsède ? Dans tous les cas, reste vigilant</p>
+        </article>
+      </main>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2>CyberRift</h2>
+          <p>Wow, super content que ton date avec Julie se soit bien passé ! La balade après le bar, c’est trop mignon. J’espère que ça continuera sur une bonne lancée</p>
+        </article>
+      </main>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2>MoonPixel</h2>
+          <p>Attends, quoi ? Tu as tout lâché ? T’es vraiment à bout, mec… Essaie de parler à quelqu’un de pro, parce que là, ça devient sérieux. T’as besoin de soutien.</p>
+        </article>
+      </main>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2>NinjaSea</h2>
+          <p>Ce voisin qui reste devant ta porte, c’est vraiment pas normal.</p>
+        </article>
+      </main>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2>Pseudo</h2>
+          <p>j'ai trouver une video du mec regarder : <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">https://www.youtube.com/watch?v=xvFZjo5PgG0</a> </p>
+        </article>
+      </main>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2>PluieSmall</h2>
+          <p>mec, respire un peu. Tu sembles sur le point de craquer, et c’est vraiment flippant. Si t’es sûr que ce voisin est dangereux, fais quelque chose avant que ça dégénère. Mais fais-le calmement, OK ?</p>
+        </article>
+      </main>
+
+      <main class="contenuecommentaire">
+        <article>
+            <h2>BoxWarrior</h2>
+          <p>Je lis ton blog depuis le début, et honnêtement, ça devient inquiétant. Ton voisin est chelou, OK, mais fais attention à pas faire un truc que tu pourrais regretter. Cherche de l’aide avant de passer à l’action.</p>
+        </article>
+      </main>
+
+<h3>Donnez nous votre avis</h3>
+<form action="" method="post">
+    <ul>
+      <li>
+        <label for="Nom">votre Nom</label>
+        <input type="text" id="Nom" name="Nom" placeholder="votre nom" />
+      </li>
+      <li>
+        <label for="mail">votre mail</label>
+        <input type="email" id="mail" name="mail" placeholder="votre.mail@exemple.com" />
+      </li>
+      <li>
+        <label for="msg">votre avis</label>
+        <textarea id="msg" name="message" placeholder="votre nom"></textarea>
+      </li>
+    </ul>
+  </form>
+
+
+<footer> 
+  <p>ce site n'est qu'une fiction.<br>
+  il a était réaliser dans le but d'un porjet scolaire.<br>
+  
+  1er annèe BUT informatique d'Aix en Provence
+  </p>
+</footer>
     <header class="titreBlog">
         <h1>SKIBIDIBLOG</h1>
         <img src="logo.png" class="logo" alt="Logo du site">
@@ -127,3 +239,4 @@
     </footer>
 </body>
 </html>
+<script src="main.js"></script>
