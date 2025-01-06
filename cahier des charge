@@ -23,18 +23,18 @@ html :
 - validationW3C de toutes vos pages HTML (réglage HTML5) (en cour) 
 
 css : 
-- faire un mennu pour naviguer entre les page web 
-- possibilité de changer le style du site Web grâce à un lien en JavaScript par l'utilisation
-  d'une autre feuille de style (la plus différente possible) de la feuille de style par défaut
-- le site Web devra être adaptatif à la fois sur smartphones, tablettes et ordinateurs (
+- faire un mennu pour naviguer entre les page web (ok)
+- Faire un bouton de changement de mode sombre <--> clair 
+- le site Web devra être adaptatif à la fois sur smartphones, tablettes et ordinateurs (ok)
   bonne architecture des répertoires 
 - programmation soignée en HTML et CSS avec usage pertinent de balises sémantiques,
-  convention de nommage, indentation et commentarisation du code source
+  convention de nommage, indentation et commentarisation du code source (ok)
 - validation W3C de toutes vos pages CSS (réglage CSS niveau 3 avec aucun
   avertissement et gestion des extensions propriétaires comme avertissement)
 
 Js :
 
-- Faire un bouton de changement de mode sombre <--> clair
+- possibilité de changer le style du site Web grâce à un lien en JavaScript par l'utilisation
+  d'une autre feuille de style (la plus différente possible) de la feuille de style par défaut
 - rendre utilisable le bouton envoyer du  formulaire 
 -pour les longues pages Web, un ancrage permettant remonter en haut de la page 
