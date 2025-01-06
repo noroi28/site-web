@@ -58,12 +58,34 @@ body {
   font-weight: bold;
 }
 
-/* Conteneur principal du profil */
+  .navigateur button {
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    width: 100px;
+    height: 30px;
+    background-color: #e169f4;
+    color: white;
+    border: red;
+    border-style:solid;
+    border-width: 2px;
+    border-color: #cf69e4;
+    cursor: pointer;
+  }
+
 .contenueProfil {
   background-color: white;
   margin: 20px auto;
   padding: 20px;
   width: 90%;
+  max-width: 500px;
+  color: black;
+}
+
+.contenueProfil ul {
+  padding: 0;
+  list-style: none;
+  margin: 0 0 20px;
   max-width: 800px; /* Plus large pour accueillir l'image et le texte */
   color: black;
   display: flex; /* Active le mode flexbox */
@@ -93,16 +115,29 @@ body {
   font-weight: bold;
 }
 
-/* Footer fixé en bas */
+/* Bouton retour en haut */
+#Haut {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: hotpink;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#Haut:hover {
+  background-color: deeppink;
+}
+
 footer {
   text-align: center;
   padding: 10px;
   background-color: hotpink;
   color: white;
-  position: fixed; /* Fixé au bas de la page */
-  bottom: 0;
-  left: 0;
-  width: 100%; /* Prend toute la largeur */
   font-size: 16px;
 }
 /* 
@@ -126,3 +161,88 @@ footer {
   }
 }
 */
+
+.dark-mode {
+    /* Header */
+  .titreBlog {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: hotpink;
+    color: black;
+    position: relative;
+  }
+
+  .titreBlog h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+
+  .titreBlog .logo {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Barre de navigation (sous le titre) */
+  .navigateur {
+    display: flex;
+    justify-content: center;
+    background-color: hotpink;
+    padding: 10px 0;
+    margin: 0; /* Pas d'espace entre header et nav */
+  }
+
+  .navigateur ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigateur li {
+    margin: 0 15px;
+  }
+
+  .navigateur a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  /* Contenu du profil */
+  .contenueProfil {
+    background-color: black;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    color: white;
+  }
+
+  .contenueProfil ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 0 20px;
+  }
+
+  .contenueProfil ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .contenueProfil p {
+    line-height: 1.6;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: hotpink;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}

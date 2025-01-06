@@ -32,6 +32,21 @@ body {
   font-size: 16px;
 }
 
+  .navigateur button {
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    width: 100px;
+    height: 30px;
+    background-color: #e169f4;
+    color: white;
+    border: red;
+    border-style:solid;
+    border-width: 2px;
+    border-color: #cf69e4;
+    cursor: pointer;
+  }
+
 .titreBlog {
   text-align: center;
   margin: 20px 0;
@@ -74,6 +89,7 @@ body {
   color: rgb(0,0,0);
 }
 
+/* Bouton retour en haut */
 #Haut {
   position: fixed;
   bottom: 20px;
@@ -130,3 +146,81 @@ footer {
 }
 */
 
+
+.dark-mode {
+  .navigateur {
+    background-color: hotpink;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navigateur ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigateur li {
+    margin: 0 15px;
+  }
+
+  .navigateur a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .titreBlog {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: hotpink;
+    color: black;
+    position: relative;
+  }
+
+  .titreBlog h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+
+  .titreBlog .logo {
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .contenueBlog {
+    background-color: black;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+
+  .contenueBlog h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .contenueBlog p {
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    color: white;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: hotpink;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
