@@ -33,47 +33,38 @@ body {
   margin: 0 15px;
 }
 
-.navigateur a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.navigateur button {
-  position: absolute;
-  left: 10px;
-  top: 3px;
-  width: 100px;
-  height: 30px;
-  background-color: #e169f4;
-  color: white;
-  border: red;
-  border-style:solid;
-  border-width: 2px;
-  border-color: #cf69e4;
-  cursor: pointer;
- }
-
 .titreBlog {
-  text-align: center;
   margin: 20px 0;
   padding: 10px;
-  background-color: hotpink;
+  background-color: #ff69b4;
   color: black;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .titreBlog h1 {
   margin: 0;
   font-size: 36px;
+  text-align: center;
+  flex: 1;
 }
 
 .titreBlog .logo {
-  position: absolute;
-  left: 20px;
-  top: 0px;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 45px;
+}
+
+.titreBlog button {
+  width: 100px;
+  height: 30px;
+  background-image: url('sombre.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border: solid 2px #cf69e4;
+  cursor: pointer;
 }
 
 .contenueBlog {

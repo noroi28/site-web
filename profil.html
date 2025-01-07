@@ -6,14 +6,12 @@
     <meta name = "description" content="bienvenu sur le skibidiblog venez découvrire la vie de notre seul utilisateur">
     <link rel="icon" type="image/vnd.icon" href="VLogo.ico">
     <link rel="stylesheet" href="StylesProfil.css">
-    
     <title>profil</title>
 </head>
 <body>
     <!-- Endroit où l'on pourra naviguer entre les différentes pages du site (remplacer les # par les liens) -->
     <nav class="navigateur">
       <ul>
-          <li><button onclick="darkFunction()" id="Mode" title="Passer skibidiblog en sombre">Mode sombre</button></li>
           <li><a class="btn" href="index.html"> Accueil </a></li>
           <li><a class="btn" href="profil.html"> Profil </a></li>
           <li><a class="btn" href="commentaire.html"> Commentaire </a></li>
@@ -25,8 +23,9 @@
   
     <!-- le header permet de créer une sorte d'en tête avec un titre-->
  <header class="titreBlog">
-    <h1> SKIBIDIBLOG </h1>
     <img src="logo.png" class="logo" alt="logo du blog">
+    <h1> SKIBIDIBLOG </h1>
+    <button onclick="darkFunction()" id="Mode" title="Passer skibidiblog en sombre"></button>
   </header>
 
   <main class="contenueProfil">
@@ -55,4 +54,3 @@
 </body>
 <script src="main.js"></script>
 </html>
-

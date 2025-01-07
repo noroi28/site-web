@@ -11,7 +11,6 @@
 <body>
   <nav class="navigateur">
     <ul>
-        <li><button onclick="darkFunction()" id="Mode" title="Passer skibidiblog en sombre">Mode sombre</button></li>
         <li><a class="btn" href="index.html"> Accueil </a></li>
         <li><a class="btn" href="profil.html"> Profil </a></li>
         <li><a class="btn" href="commentaire.html"> Commentaire </a></li>
@@ -24,8 +23,9 @@
     
 
       <header class="titreBlog">
-        <h1>SKIBIDIBLOG</h1>
         <img src="logo.png" class="logo" alt="logo du blog">
+        <h1>SKIBIDIBLOG</h1>
+        <button onclick="darkFunction()" id="Mode" title="Passer skibidiblog en sombre"></button>
       </header>
 
       <section class="contenuecommentaire">
@@ -103,6 +103,7 @@
 
       <section class="contenuecommentaire">
         <article>
+          <p> 15 oct 2018 </p>
             <h2>PluieSmall</h2>
             <p class="date"> 15 oct 2018 </p>
           <p>mec, respire un peu. Tu sembles sur le point de craquer, et c’est vraiment flippant. Si t’es sûr que ce voisin est dangereux, fais quelque chose avant que ça dégénère. Mais fais-le calmement, OK ?</p>
@@ -111,6 +112,7 @@
 
       <section class="contenuecommentaire">
         <article>
+          <p> 17 oct 2018 </p>
             <h2>BoxWarrior</h2>
             <p class="date"> 17 oct 2018 </p>
           <p>Je lis ton blog depuis le début, et honnêtement, ça devient inquiétant. Ton voisin est chelou, OK, mais fais attention à pas faire un truc que tu pourrais regretter. Cherche de l’aide avant de passer à l’action.</p>
@@ -132,7 +134,7 @@
         <label for="msg">votre avis</label>
         <textarea id="msg" name="message" placeholder="votre nom"></textarea>
       </li>
-      <li> <button id="Mode" title ="permet d'envoyer l'avis">envoyer</buton> </li>
+      <li> <button>envoyer</bouton> </li>
     </ul>
   </form>
 
@@ -144,7 +146,6 @@
   1er annèe BUT informatique d'Aix en Provence
   </p>
 </footer>
-
 
 </body>
 <script src="main.js"></script>
