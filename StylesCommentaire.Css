@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'TheNightLamp';
+  src: url('fonts/TheNightLamp-rgWep.ttf');
+}
+
+@font-face {
+  font-family: 'Unutterable';
+  src: url('fonts/Unutterable-Regular.ttf');
+}
+
 /* Suppression des marges et styles par défaut */
 body {
     margin: 0;
@@ -14,7 +24,7 @@ body {
   .titreBlog {
     margin: 20px 0;
     padding: 10px;
-    background-color: #ff69b4;
+    background-color: hsl(330, 100%, 71%);
     color: black;
     position: relative;
     display: flex;
@@ -135,6 +145,7 @@ form ul {
 form li {
   margin-bottom: 15px;
   color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 #envoyer {
@@ -184,6 +195,7 @@ form textarea {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  display: none;
 }
 
 #Haut:hover {
@@ -227,198 +239,114 @@ footer {
 }
 */
   
+
 .dark-mode {
-    /* Header */
+  font-family: 'Unutterable', sans-serif;
+  background-image: url('fond-dark.png');
+  background-size: cover;
+  background-attachment: fixed;
+  color:lightgray;
+}
 
-    .titreBlog {
-      margin: 20px 0;
-      padding: 10px;
-      background-color: rgb(170, 49, 110);
-      color: black;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    
-    .titreBlog h1 {
-      margin: 0;
-      font-size: 36px;
-      text-align: center;
-      flex: 1;
-    }
-    
-    .titreBlog .logo {
-      width: 75px;
-      height: 45px;
-    }
-    
-    .titreBlog button {
-      width: 100px;
-      height: 30px;
-      background-image: url('clair.png');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      border: solid 2px #cf69e4;
-      cursor: pointer;
-    }
+.dark-mode .titreBlog {
+  font-family: 'TheNightLamp', sans-serif;
+  background-color: rgb(170, 49, 110);
+  color:lightgray;
+}
+        
+.dark-mode .titreBlog button {
+  background-image: url('clair.png');
+}
 
-    /* Navigation */
-    .navigateur {
-      display: flex;
-      justify-content: center;
-      background-color: rgb(170, 49, 110);
-      padding: 10px 0;
-    }
-    
-    .navigateur ul {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .navigateur li {
-      margin: 0 15px;
-    }
-    
-    .navigateur a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      margin: 0 15px;
-  }
-  
-  .navigateur a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  
+/* Navigation */
+.dark-mode .navigateur {
+  font-family: 'TheNightLamp', sans-serif;
+  background-color: rgb(170, 49, 110);
+}
 
-  
-  /* Contenu principal */
-  .contenuecommentaire {
-    background-color: rgb(63, 70, 100);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    color: white;
-  }
-  
-  .contenuecommentaire h2 {
-    font-size: 20px;
-    color: hotpink;
-  }
-  
-  .contenuecommentaire pre {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    color: black;
-  }
-  
-  h3 {
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 15px;
-      padding: 10px;
-      background-color: rgb(170, 49, 110);
-      color: black;
-  }
-  
-  
-  /* Formulaire */
-  form {
-    background-color: rgb(63, 70, 100);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  form ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-  }
-  
-  form li {
-    margin-bottom: 15px;
-    color: white;
-    
-  }
+.dark-mode .navigateur ul {
+}
 
-  #envoyer {
-    width: 100px;
-    height: 30px;
-    background-color: #e169f4;
-    color: white;
-    border: 2px solid #cf69e4;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  #envoyer:hover {
-    background-color: #cf69e4;
-    transform: scale(1.05);
-  }
-  
-  form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color:white;
-  }
-  
-  form input,
-  form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    background-color: rgb(63, 70, 100);
-    color:white;
-  }
-  
-  form textarea {
-    height: 100px;
-    resize: none;
-  }
+.dark-mode .navigateur li {
+}
 
-  
-  /* Bouton retour en haut */
-  #haut {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: hotpink;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  #haut:hover {
-    background-color: deeppink;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
+.dark-mode .navigateur a {
+  color:lightgray;
+}
+
+
+/* Contenu principal */
+.dark-mode .contenuecommentaire {
+  background-color: rgb(63, 70, 100);
+  color:lightgray;
+}
+
+.dark-mode .contenuecommentaire h2 {
+}
+
+.dark-mode .contenuecommentaire pre {
+
+}
+
+.dark-mode h3 {
     background-color: rgb(170, 49, 110);
-    color: white;
-    margin-top: 20px;
-    font-size: 16px;
-  }
-}  
+}
+
+
+/* Formulaire */
+.dark-mode form {
+  background-color: rgb(63, 70, 100);   
+  color:lightgray;
+}
+
+.dark-mode form ul {
+}
+
+.dark-mode form li {
+  background-color: rgb(63, 70, 100);
+}
+
+.dark-mode #envoyer {
+}
+
+.dark-mode #envoyer:hover {
+}
+
+.dark-mode form label {   
+  color:lightgray;
+}
+
+.dark-mode form input,
+.dark-mode form textarea {
+  font-family: 'Unutterable', sans-serif;
+  background-color: rgb(63, 70, 100);   
+  color:lightgray;
+}
+
+.dark-mode form textarea {
+  height: 100px;
+  resize: none;
+}
+
+
+/* Bouton retour en haut */
+.dark-mode #haut {
+  position: fixed;
+  bottom: 200px;
+  right: 20px;
+  background-color: rgb(49, 126, 170);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode #haut:hover {
+  background-color: deeppink;
+}
+
+.dark-mode footer {
+  background-color: rgb(170, 49, 110);
+}
