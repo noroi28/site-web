@@ -50,11 +50,11 @@ body {
   justify-content: center;
   background-color: hotpink;
   padding: 10px 0;
-  margin: 0; /* Pas d'espace entre header et nav */
 }
 
 .navigateur ul {
   display: flex;
+  justify-content: left;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -68,50 +68,53 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  margin: 0 15px;
 }
 
-
-.contenueProfil {
-  background-color: white;
-  margin: 20px auto;
-  padding: 20px;
-  width: 90%;
-  max-width: 500px;
+.navigateur a {
+  text-decoration: none;
   color: black;
-}
-
-.contenueProfil ul {
-  padding: 0;
-  list-style: none;
-  margin: 0 0 20px;
-  max-width: 800px; /* Plus large pour accueillir l'image et le texte */
-  color: black;
-  display: flex; /* Active le mode flexbox */
-  align-items: center; /* Aligne verticalement l'image et le texte */
-}
-
-/* Photo de profil */
-.photo {
-  width: 100px; /* Taille de l'image */
-  height: 100px;
-  border-radius: 50%; /* Cercle */
-  border: 3px solid hotpink; /* Bordure */
-  margin-right: 20px; /* Espacement entre l'image et le texte */
-  object-fit: cover; /* Remplit bien le cercle */
-  flex-shrink: 0; /* Empêche la photo de rétrécir */
-}
-
-/* Texte du profil */
-.contenueProfil ul {
-  padding: 0;
-  list-style: none;
-  margin: 0;
-}
-
-.contenueProfil ul li {
-  margin-bottom: 10px;
   font-weight: bold;
 }
+
+
+  .contenueProfil {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px; /* Plus large pour accueillir l'image et le texte */
+    color: black;
+    display: flex; /* Active le mode flexbox */
+    align-items: center; /* Aligne verticalement l'image et le texte */   
+  }
+  
+  /* Photo de profil */
+  .photo {
+    width: 100px; /* Taille de l'image */
+    height: 100px;
+    border-radius: 50%; /* Cercle */
+    border: 3px solid hotpink; /* Bordure */
+    margin-right: 20px; /* Espacement entre l'image et le texte */
+    object-fit: cover; /* Remplit bien le cercle */
+    flex-shrink: 0; /* Empêche la photo de rétrécir */
+  }
+  
+  /* Texte du profil */
+  .contenueProfil ul {
+    display: flex;
+    flex-direction: column; /* Affiche les éléments en colonne */
+    align-items: flex-start; /* Aligne les éléments à gauche (ou utilisez center pour centrer) */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  
+  /* Espacement entre les lignes */
+  .contenueProfil ul li {
+    margin-bottom: 10px; /* Espacement entre chaque ligne */
+    font-weight: bold;
+  }
 
 /* Bouton retour en haut */
 #Haut {
@@ -136,6 +139,10 @@ footer {
   padding: 10px;
   background-color: hotpink;
   color: white;
+  position: fixed; /* Fixé au bas de la page */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Prend toute la largeur */
   font-size: 16px;
 }
 /* 
@@ -162,85 +169,153 @@ footer {
 
 .dark-mode {
     /* Header */
-  .titreBlog {
-    text-align: center;
-    margin: 20px 0;
-    padding: 10px;
-    background-color: hotpink;
-    color: black;
-    position: relative;
-  }
-
-  .titreBlog h1 {
-    margin: 0;
-    font-size: 36px;
-  }
-
-  .titreBlog .logo {
-    position: absolute;
-    left: 20px;
-    top: 0px;
-    width: 50px;
-    height: 50px;
-  }
-
-  /* Barre de navigation (sous le titre) */
-  .navigateur {
-    display: flex;
-    justify-content: center;
-    background-color: hotpink;
-    padding: 10px 0;
-    margin: 0; /* Pas d'espace entre header et nav */
-  }
-
-  .navigateur ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .navigateur li {
-    margin: 0 15px;
-  }
-
-  .navigateur a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-
-  /* Contenu du profil */
-  .contenueProfil {
-    background-color: black;
-    margin: 20px auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 500px;
-    color: white;
-  }
-
-  .contenueProfil ul {
-    padding: 0;
-    list-style: none;
-    margin: 0 0 20px;
-  }
-
-  .contenueProfil ul li {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-
-  .contenueProfil p {
-    line-height: 1.6;
-  }
-
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: hotpink;
-    color: white;
-    margin-top: 20px;
-    font-size: 16px;
-  }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('fond.png'); /* Image de fond */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+    }
+    
+    /* Header */
+    .titreBlog {
+      text-align: center;
+      margin: 20px 0;
+      padding: 10px;
+      background-color: rgb(170, 49, 110);
+      color: black;
+      position: relative;
+    }
+    
+    .titreBlog h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    
+    .titreBlog .logo {
+      position: absolute;
+      left: 20px;
+      top: 0px;
+      width: 50px;
+      height: 50px;
+    }
+    
+    /* Barre de navigation (sous le titre) */
+    .navigateur {
+      display: flex;
+      justify-content: center;
+      background-color: rgb(170, 49, 110);
+      padding: 10px 0;
+    }
+    
+    .navigateur ul {
+      display: flex;
+      justify-content: left;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .navigateur li {
+      margin: 0 15px;
+    }
+    
+    .navigateur a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      margin: 0 15px;
+    }
+    
+    .navigateur a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    
+      .navigateur button {
+        position: absolute;
+        left: 10px;
+        top: 3px;
+        width: 100px;
+        height: 30px;
+        background-color: #e169f4;
+        color: white;
+        border: red;
+        border-style:solid;
+        border-width: 2px;
+        border-color: #cf69e4;
+        cursor: pointer;
+      }
+    
+    
+    .contenueProfil {
+      background-color: rgb(63, 70, 100);
+      margin: 20px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 800px; /* Plus large pour accueillir l'image et le texte */
+      color: black;
+      display: flex; /* Active le mode flexbox */
+      align-items: center; /* Aligne verticalement l'image et le texte */   
+    }
+    
+    /* Photo de profil */
+    .photo {
+      width: 100px; /* Taille de l'image */
+      height: 100px;
+      border-radius: 50%; /* Cercle */
+      border: 3px solid hotpink; /* Bordure */
+      margin-right: 20px; /* Espacement entre l'image et le texte */
+      object-fit: cover; /* Remplit bien le cercle */
+      flex-shrink: 0; /* Empêche la photo de rétrécir */
+    }
+    
+    /* Texte du profil */
+    .contenueProfil ul {
+      display: flex;
+      flex-direction: column; /* Affiche les éléments en colonne */
+      align-items: flex-start; /* Aligne les éléments à gauche (ou utilisez center pour centrer) */
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+    
+    /* Espacement entre les lignes */
+    .contenueProfil ul li {
+      margin-bottom: 10px; /* Espacement entre chaque ligne */
+      font-weight: bold;
+    }
+    
+    /* Bouton retour en haut */
+    #Haut {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: hotpink;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    #Haut:hover {
+      background-color: deeppink;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgb(170, 49, 110);
+      color: white;
+      position: fixed; /* Fixé au bas de la page */
+      bottom: 0;
+      left: 0;
+      width: 100%; /* Prend toute la largeur */
+      font-size: 16px;
+    }
 }

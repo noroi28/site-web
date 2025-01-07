@@ -134,6 +134,25 @@ form ul {
 
 form li {
   margin-bottom: 15px;
+  color: black;
+}
+
+#envoyer {
+  width: 100px;
+  height: 30px;
+  background-color: #e169f4;
+  color: white;
+  border: 2px solid #cf69e4;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: center;
+}
+
+#envoyer:hover {
+  background-color: #cf69e4;
+  transform: scale(1.05);
 }
 
 form label {
@@ -149,6 +168,9 @@ form textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
+  text-align: center; /* Centrer le texte, y compris le placeholder */
+  resize: none;
+  box-sizing: border-box; /* Assurer que les bordures n'affectent pas la largeur */
 }
 /* Bouton retour en haut */
 #Haut {
@@ -166,6 +188,15 @@ form textarea {
 
 #Haut:hover {
   background-color: deeppink;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: hotpink;
+  color: white;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 
@@ -202,7 +233,7 @@ form textarea {
     .titreBlog {
       margin: 20px 0;
       padding: 10px;
-      background-color: #ff69b4;
+      background-color: rgb(170, 49, 110);
       color: black;
       position: relative;
       display: flex;
@@ -237,7 +268,7 @@ form textarea {
     .navigateur {
       display: flex;
       justify-content: center;
-      background-color: hotpink;
+      background-color: rgb(170, 49, 110);
       padding: 10px 0;
     }
     
@@ -265,9 +296,11 @@ form textarea {
     font-weight: bold;
   }
   
+
+  
   /* Contenu principal */
   .contenuecommentaire {
-    background-color: black;
+    background-color: rgb(63, 70, 100);
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -294,14 +327,14 @@ form textarea {
       color: #333;
       margin-bottom: 15px;
       padding: 10px;
-      background-color: #ff69b4;
+      background-color: rgb(170, 49, 110);
       color: black;
   }
   
   
   /* Formulaire */
   form {
-    background-color: black;
+    background-color: rgb(63, 70, 100);
     padding: 20px;
     margin: 20px auto;
     max-width: 600px;
@@ -317,7 +350,25 @@ form textarea {
   
   form li {
     margin-bottom: 15px;
+    color: white;
     
+  }
+
+  #envoyer {
+    width: 100px;
+    height: 30px;
+    background-color: #e169f4;
+    color: white;
+    border: 2px solid #cf69e4;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #envoyer:hover {
+    background-color: #cf69e4;
+    transform: scale(1.05);
   }
   
   form label {
@@ -334,7 +385,7 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
-    background-color: black;
+    background-color: rgb(63, 70, 100);
     color:white;
   }
   
@@ -342,6 +393,7 @@ form textarea {
     height: 100px;
     resize: none;
   }
+
   
   /* Bouton retour en haut */
   #haut {
@@ -364,7 +416,7 @@ form textarea {
   footer {
     text-align: center;
     padding: 10px;
-    background-color: hotpink;
+    background-color: rgb(170, 49, 110);
     color: white;
     margin-top: 20px;
     font-size: 16px;
