@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="VLogo.ico">
     <link  rel="stylesheet" href="StylesCommentaire.Css">
-    <script src="main.js"></script>
     <title>Commentaire</title>
 </head>
 
@@ -14,7 +13,7 @@
     <ul>
         <li><button onclick="darkFunction()" id="Mode" title="Passer skibidiblog en sombre">Mode sombre</button></li>
         <li><a class="btn" href="index.html"> Accueil </a></li>
-        <li><a class="btn" href="#"> Profil </a></li>
+        <li><a class="btn" href="profil.html"> Profil </a></li>
         <li><a class="btn" href="commentaire.html"> Commentaire </a></li>
     </ul>
 </nav>
@@ -122,18 +121,18 @@
 <form action="" method="post">
     <ul>
       <li>
-        <label for="Nom">votre Nom</label>
+        <label for="Nom">Votre Nom</label>
         <input type="text" id="Nom" name="Nom" placeholder="votre nom" />
       </li>
       <li>
-        <label for="mail">votre mail</label>
+        <label for="mail">Votre mail</label>
         <input type="email" id="mail" name="mail" placeholder="votre.mail@exemple.com" />
       </li>
       <li>
-        <label for="msg">votre avis</label>
+        <label for="msg">Votre avis</label>
         <textarea id="msg" name="message" placeholder="votre nom"></textarea>
       </li>
-      <li> <button>envoyer</bouton> </li>
+      <li> <button id="envoyer">envoyer</button> </li>
     </ul>
   </form>
 
@@ -146,5 +145,7 @@
   </p>
 </footer>
    
+
 </body>
 </html>
+<script src="main.js"></script>

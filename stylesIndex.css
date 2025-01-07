@@ -8,17 +8,18 @@ body {
 }
 
 .navigateur {
+  display: flex;
+  justify-content: center;
   background-color: hotpink;
-  padding: 10px;
-  text-align: center;
+  padding: 10px 0;
 }
 
 .navigateur ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navigateur li {
@@ -29,23 +30,29 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 16px;
+  margin: 0 15px;
 }
 
-  .navigateur button {
-    position: absolute;
-    left: 10px;
-    top: 3px;
-    width: 100px;
-    height: 30px;
-    background-color: #e169f4;
-    color: white;
-    border: red;
-    border-style:solid;
-    border-width: 2px;
-    border-color: #cf69e4;
-    cursor: pointer;
-  }
+.navigateur a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.navigateur button {
+  position: absolute;
+  left: 10px;
+  top: 3px;
+  width: 100px;
+  height: 30px;
+  background-color: #e169f4;
+  color: white;
+  border: red;
+  border-style:solid;
+  border-width: 2px;
+  border-color: #cf69e4;
+  cursor: pointer;
+ }
 
 .titreBlog {
   text-align: center;
@@ -113,7 +120,7 @@ footer {
   background-color: hotpink;
   color: white;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 16px;  
 }
 /*
 @media screen and (max-width: 768px) {
@@ -149,7 +156,7 @@ footer {
 
 .dark-mode {
   .navigateur {
-    background-color: hotpink;
+    background-color: rgb(170, 49, 110);
     padding: 10px;
     text-align: center;
   }
@@ -177,7 +184,7 @@ footer {
     text-align: center;
     margin: 20px 0;
     padding: 10px;
-    background-color: hotpink;
+    background-color: rgb(170, 49, 110);
     color: black;
     position: relative;
   }
@@ -196,7 +203,7 @@ footer {
   }
 
   .contenueBlog {
-    background-color: black;
+    background-color: rgb(63, 70, 100);
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
@@ -218,7 +225,7 @@ footer {
   footer {
     text-align: center;
     padding: 10px;
-    background-color: hotpink;
+    background-color: rgb(170, 49, 110);
     color: white;
     margin-top: 20px;
     font-size: 16px;
