@@ -12,14 +12,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url('fond.png');
+  background-image: url('fond.png'); /* Image de fond */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: white;
-  min-height: 100vh; /* Assure une hauteur minimum de 100% de la fenêtre */
-  display: flex;
-  flex-direction: column; /* Organise les éléments en colonne */
 }
 
 /* Header */
@@ -93,12 +90,13 @@ body {
 
 .contenueProfil {
   background-color: white;
-  flex: 1; /* Prend l'espace disponible */
   margin: 20px auto;
   padding: 20px;
   width: 90%;
-  max-width: 800px;
-  margin-bottom: 60px; /* Espace pour le footer */  
+  max-width: 800px; /* Plus large pour accueillir l'image et le texte */
+  color: black;
+  display: flex; /* Active le mode flexbox */
+  align-items: center; /* Aligne verticalement l'image et le texte */   
 }
   
 /* Photo de profil */
@@ -152,13 +150,15 @@ body {
 }
 
 footer {
-  background-color: hotpink;
-  color: white;
   text-align: center;
   padding: 10px;
-  width: 100%;
-  position: relative; /* Au lieu de fixed */
+  background-color: hotpink;
+  color: white;
+  position: fixed; /* Fixé au bas de la page */
   bottom: 0;
+  left: 0;
+  width: 100%; /* Prend toute la largeur */
+  font-size: 16px;
 }
 /* 
 @media (max-width: 768px) {
@@ -182,11 +182,7 @@ footer {
 }
 */
 
-@media (max-width: 768px) {
-  .contenueProfil, .contenueProfil2 {
-    margin-bottom: 80px; /* Plus d'espace pour le footer sur mobile */
-  }
-}
+
 
 /* Header */
 .dark-mode {
@@ -230,12 +226,13 @@ footer {
 
 .dark-mode .contenueProfil2 {
   background-color: rgb(63, 70, 100);
-  flex: 1; /* Prend l'espace disponible */
   margin: 20px auto;
   padding: 20px;
   width: 90%;
-  max-width: 800px;
-  margin-bottom: 60px; /* Espace pour le footer */
+  max-width: 800px; /* Plus large pour accueillir l'image et le texte */
+  color: lightgray;
+  display: flex; /* Active le mode flexbox */
+  align-items: center; /* Aligne verticalement l'image et le texte */   
 }
 
 /* Photo de profil */
@@ -285,10 +282,5 @@ footer {
 
 .dark-mode footer {
   background-color: rgb(170, 49, 110);
-  color: white;
-  text-align: center;
-  padding: 10px;
-  width: 100%;
-  position: relative; /* Au lieu de fixed */
-  bottom: 0;
+  color:lightgray;
 }
