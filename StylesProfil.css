@@ -110,10 +110,6 @@ body {
   flex-shrink: 0; /* Empêche la photo de rétrécir */
 }
 
-.photo2 {
-  display: none;
-}
-
 /* Texte du profil */
 .contenueProfil ul {
   display: flex;
@@ -128,6 +124,10 @@ body {
 .contenueProfil ul li {
   margin-bottom: 10px; /* Espacement entre chaque ligne */
   font-weight: bold;
+}
+
+.contenueProfil2 {
+  display: none;
 }
 
 /* Bouton retour en haut */
@@ -221,16 +221,22 @@ footer {
 }
 
 .dark-mode .contenueProfil {
-  background-color: rgb(63, 70, 100);
-  color: lightgray;
-}
-
-/* Photo de profil */
-.dark-mode .photo {
   display: none;
 }
 
-.dark-mode .photo2 {
+.dark-mode .contenueProfil2 {
+  background-color: rgb(63, 70, 100);
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px; /* Plus large pour accueillir l'image et le texte */
+  color: lightgray;
+  display: flex; /* Active le mode flexbox */
+  align-items: center; /* Aligne verticalement l'image et le texte */   
+}
+
+/* Photo de profil */
+.dark-mode .contenueProfil2 .photo {
   width: 100px; /* Taille de l'image */
   height: 100px;
   border-radius: 50%; /* Cercle */
@@ -242,10 +248,18 @@ footer {
 
 /* Texte du profil */
 .dark-mode .contenueProfil ul {
+  display: flex;
+  flex-direction: column; /* Affiche les éléments en colonne */
+  align-items: flex-start; /* Aligne les éléments à gauche (ou utilisez center pour centrer) */
+  padding: 0;
+  list-style: none;
+  margin: 0;
 }
 
 /* Espacement entre les lignes */
 .dark-mode .contenueProfil ul li {
+  margin-bottom: 10px; /* Espacement entre chaque ligne */
+  font-weight: bold;
 }
 
 /* Bouton retour en haut */
