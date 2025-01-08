@@ -12,8 +12,3 @@ Partie HTML :
 - site internet :
   - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
   - https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Structuring_content/Structuring_documents
-EmailJS :
-- vidéo :
-  - https://www.youtube.com/watch?v=dgcYOm8n8ME
-- site internet :
-  - https://www.emailjs.com/

@@ -103,9 +103,32 @@ body {
   color: black;
 }
 
-.contenuecommentaire h2 {
+.contenuecommentairea .titre {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.contenuecommentaire .titre h2 {
+  flex-grow: 1;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-weight: bold;
+  text-decoration-line: underline;
+  line-height: 1.4; /* Espacement entre les lignes du titre */
+
   font-size: 20px;
   color: hotpink;
+}
+
+.contenuecommentaire .titre h3 {
+  flex-grow: 0;
+  text-align: center;
+  color: gray;
+  font-size: 14px; /* Petit texte */
+  line-height: 1.4; /* Alignement avec le titre */
 }
 
 .contenuecommentaire pre {
@@ -139,22 +162,6 @@ body {
   padding: 10px;
   border-radius: 5px;
   color: black;
-}
-
-.contenuecommentaire .date {
-  flex-grow: 0;
-  text-align: center;
-  color: gray;
-  font-size: 14px; /* Petit texte */
-  line-height: 1.4; /* Alignement avec le titre */
-}
-
-.contenuecommentaire2 .date {
-  flex-grow: 0;
-  text-align: center;
-  color: gray;
-  font-size: 14px; /* Petit texte */
-  line-height: 1.4; /* Alignement avec le titre */
 }
 
 h3 {
@@ -216,62 +223,6 @@ h3 {
 
 .form input,
 .form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  text-align: center; /* Centrer le texte, y compris le placeholder */
-  resize: none;
-  box-sizing: border-box; /* Assurer que les bordures n'affectent pas la largeur */
-}
-
-form {
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-form ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-form li {
-  margin-bottom: 15px;
-  color: black;
-  background-color: rgb(255, 255, 255);
-}
-
-#envoyer {
-  width: 100px;
-  height: 30px;
-  background-color: #e169f4;
-  color: white;
-  border: 2px solid #cf69e4;
-  cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  position: center;
-}
-
-#envoyer:hover {
-  background-color: #cf69e4;
-  transform: scale(1.05);
-}
-
-form label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-form input,
-form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
