@@ -141,6 +141,22 @@ body {
   color: black;
 }
 
+.contenuecommentaire .date {
+  flex-grow: 0;
+  text-align: center;
+  color: gray;
+  font-size: 14px; /* Petit texte */
+  line-height: 1.4; /* Alignement avec le titre */
+}
+
+.contenuecommentaire2 .date {
+  flex-grow: 0;
+  text-align: center;
+  color: gray;
+  font-size: 14px; /* Petit texte */
+  line-height: 1.4; /* Alignement avec le titre */
+}
+
 h3 {
     text-align: center;
     font-size: 20px;
