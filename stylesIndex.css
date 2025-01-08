@@ -78,6 +78,7 @@ body {
 }
 
 .contenueBlog {
+  background-color: rgb(255, 255, 255);
   margin: 20px auto;
   max-width: 800px;
   padding: 20px;
@@ -121,6 +122,7 @@ body {
 }
 
 .contenueBlog2 {
+  background-color: rgb(255, 255, 255);
   margin: 20px auto;
   max-width: 800px;
   padding: 20px;
@@ -265,15 +267,12 @@ footer {
   background-color: rgb(63, 70, 100);
 }
 
-.dark-mode .contenueBlog .titre .titre {
+.dark-mode .contenueBlog h2 {
+  color: lightgray;
 }
 
 .dark-mode .contenueBlog p {
   color: lightgray;
-}
-
-.dark-mode .contenueBlog2 {
-  display: none;
 }
 
 .dark-mode .contenueBlog3 {
@@ -284,31 +283,15 @@ footer {
   display: block;
 }
 
-.dark-mode .contenueBlog3 .titre {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  gap: 100px;
+.dark-mode .contenueBlog2 {
+  display: none;
 }
 
-.dark-mode .contenueBlog3 .titre .titre {
-  flex-grow: 1;
-  text-align: left;
-  margin-bottom: 10px;
-  margin-top: 50px;
+.dark-mode .contenueBlog3 h2 {
   font-size: 24px;
-  color: black;
-  font-weight: bold;
-  text-decoration-line: underline;
-  line-height: 1.4; /* Espacement entre les lignes du titre */
-}
-
-.dark-mode .contenueBlog .titre .date {
-  flex-grow: 0;
-  text-align: center;
-  color: gray;
-  font-size: 14px; /* Petit texte */
-  line-height: 1.4; /* Alignement avec le titre */
+  margin-bottom: 10px;
+  color: lightgray;
+  display: block;
 }
 
 .dark-mode .contenueBlog3 p {
@@ -316,6 +299,7 @@ footer {
   line-height: 1.5;
   white-space: pre-wrap;
   color: lightgray;
+  display: block;
 }
 
 
