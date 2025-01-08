@@ -6,6 +6,15 @@
     <link rel="icon" type="image/x-icon" href="VLogo.ico">
     <link  rel="stylesheet" href="StylesCommentaire.Css">
     <title>Commentaire</title>
+    <script src="com.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("ytfokNQtyVOUHsC6S");
+   })();
+</script>
 </head>
 
 <body>
@@ -176,8 +185,38 @@
         </article>
       </section>
 
+      <section class="contenuecommentaire">
+        <article>
+            <h2>DarkAlexandreDu13</h2>
+            <p class="date"> 19 oct 2018 </p>
+          <p>Se cIteu yL et nULL sEloui La ai MI3Ux : <a href="https://x.com"> Lethal Company </a></p>
+          <a href="https://x.com">
+            <img src="lethal.png" class="lethal" href="https://x.com"/>
+          </a>
+        </article>
+      </section>
 
-<h3>Donnez nous votre avis</h3>
+
+<h3>Donnez nous votre avis section</h3>
+<section class="form">
+    <ul>
+      <li>
+        <label for="Nom">votre Nom</label>
+        <input type="text" id="Nom" name="Nom" placeholder="votre nom" >
+      </li>
+      <li>
+        <label for="email">votre mail</label>
+        <input type="email" id="email" name="email" placeholder="votre.mail@exemple.com" >
+      </li>
+      <li>
+        <label for="msg">votre avis</label>
+        <textarea id="msg" name="msg" placeholder="votre nom"></textarea>
+      </li>
+      <li> <button class="envoyer" onclick="sendMail()">envoyer</button> </li>
+    </ul>
+  </section>
+
+<h3>Donnez nous votre avis form</h3>
 <form action="#" method="post">
     <ul>
       <li>
@@ -185,14 +224,14 @@
         <input type="text" id="Nom" name="Nom" placeholder="votre nom" >
       </li>
       <li>
-        <label for="mail">votre mail</label>
-        <input type="email" id="mail" name="mail" placeholder="votre.mail@exemple.com" >
+        <label for="email">votre mail</label>
+        <input type="email" id="email" name="email" placeholder="votre.mail@exemple.com" >
       </li>
       <li>
         <label for="msg">votre avis</label>
-        <textarea id="msg" name="message" placeholder="votre nom"></textarea>
+        <textarea id="msg" name="msg" placeholder="votre nom"></textarea>
       </li>
-      <li> <button>envoyer</bouton> </li>
+      <li> <button class="envoyer" onclick="sendMail()">envoyer</button> </li>
     </ul>
   </form>
 
